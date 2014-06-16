@@ -1,0 +1,10 @@
+include ../layouts/default
+
+block content
+  h1 Agregar una nueva tarea
+
+  form(action="", method="post")
+    label Nombre
+      input(type="text", name="name")
+
+    input(type="submit", value="Agregar")

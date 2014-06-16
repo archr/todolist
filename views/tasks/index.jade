@@ -1,0 +1,11 @@
+include ../layouts/default
+
+block content
+  h1 Lista de tareas
+  a(href="/tasks/add") Nueva tarea
+
+  ul
+    each task in tasks
+      li
+        input(type="checkbox")
+        span= task.name
